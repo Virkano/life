@@ -1,7 +1,7 @@
 <script setup>
 const route = useRouter()
 const { data: page } = await useAsyncData(route.currentRoute.value.path, () => queryContent(route.currentRoute.value.path).findOne())
-console.log(page.value)
+// console.log(page.value)
 if (!page.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 const currentPageNavigation = page.value.navigation
@@ -11,7 +11,6 @@ useSeoMeta({
   ogTitle: `${currentPageNavigation.title}`,
   description: currentPageNavigation.description,
   ogDescription: currentPageNavigation.description,
-  ogImage: '',
 })
 </script>
 

@@ -16,10 +16,6 @@
             工作台
             <span class="sr-only">工作台</span>
           </a>
-          <a class="flex items-center justify-center font-medium underline-offset-4 hover:text-black hover:underline dark:hover:text-white" href="/changelog">
-            更新日志
-            <span class="sr-only">更新日志</span>
-          </a>
         </div>
       </div>
     </div>
