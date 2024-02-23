@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     'dayjs-nuxt',
     '@nuxt/content',
+    '@vueuse/nuxt',
   ],
   pinia: {
     autoImports: [

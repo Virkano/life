@@ -152,7 +152,9 @@ getArticleList()
       <div class="order-1 self-center lg:order-3">
         <div class="pb-2 sm:pb-8">
           <div class="flex flex-col gap-4 text-justify">
-            <h1 class="mt-6 text-2xl font-bold tracking-wide text-zinc-800 dark:text-zinc-200 md:mt-0 md:text-3xl">
+            <h1
+              class="mt-6 text-2xl font-bold tracking-wide text-zinc-800 dark:text-zinc-200 md:mt-0 md:text-3xl"
+            >
               你好！我是 Kano 👋
             </h1>
             <p class="text-base text-zinc-800 dark:text-zinc-200 max-md:text-sm">
