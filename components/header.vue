@@ -35,20 +35,19 @@ function activeChange(val: number) {
           </span>
         </NuxtLink>
       </div>
-      <nav class="z-[99] box-border flex flex-row items-center space-x-7 text-base font-semibold hidden md:block">
-        <div class="static space-x-4 border-t-0 border-[#d8dcdf] bg-transparent p-0 backdrop-blur-lg backdrop-saturate-[180%] backdrop-filter-none dark:border-[#323232] ">
-          <ul class="mx-auto flex w-full max-w-sm items-center justify-start gap-8 py-0 leading-none">
-            <NuxtLink v-for="(item, index) in navList" :key="index" class=" inline-flex w-full flex-row items-center justify-center gap-2 leading-none" :aria-label="item.name" :to="item.link" @click.stop="activeChange(index + 1)">
-              <span class="inline flex-shrink-0 select-none text-base font-bold text-[var(--gray10)] underline-offset-4 transition-colors hover:text-black dark:hover:text-white" :class="active === index + 1 ? 'text-neutral-900 dark:text-neutral-100' : ''">
-                {{ item.name }}
-              </span>
-              <!-- <span class="inline flex-shrink-0 select-none text-base font-bold text-[var(--gray10)] underline-offset-4 transition-colors hover:text-black dark:hover:text-white ">
-                {{ item.name }}
-              </span> -->
-            </NuxtLink>
-          </ul>
-        </div>
-      </nav>
+      <div class="z-[99] hidden md:block">
+        <nav class=" box-border flex flex-row items-center space-x-7 text-base font-semibold">
+          <div class="static space-x-4 border-t-0 border-[#d8dcdf] bg-transparent p-0 backdrop-blur-lg backdrop-saturate-[180%] backdrop-filter-none dark:border-[#323232] ">
+            <ul class="mx-auto flex w-full max-w-sm items-center justify-start gap-8 py-0 leading-none">
+              <NuxtLink v-for="(item, index) in navList" :key="index" class=" inline-flex w-full flex-row items-center justify-center gap-2 leading-none" :aria-label="item.name" :to="item.link" @click.stop="activeChange(index + 1)">
+                <span class="inline flex-shrink-0 select-none text-base font-bold text-[var(--gray10)] underline-offset-4 transition-colors hover:text-black dark:hover:text-white" :class="active === index + 1 ? 'text-neutral-900 dark:text-neutral-100' : ''">
+                  {{ item.name }}
+                </span>
+              </NuxtLink>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
   <!-- 底部 -->
