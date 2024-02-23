@@ -1,8 +1,18 @@
 <script setup>
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-const router = useRouter()
+const route = useRouter()
+const { data: page } = await useAsyncData(route.currentRoute.value.path, () => queryContent(route.currentRoute.value.path).findOne())
+console.log(page.value)
+if (!page.value)
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+const currentPageNavigation = page.value.navigation
 
-const currentPageNavigation = navigation.value[0].children.find(item => item._path === router.currentRoute.value.path)
+useSeoMeta({
+  title: currentPageNavigation.title,
+  ogTitle: `${currentPageNavigation.title}`,
+  description: currentPageNavigation.description,
+  ogDescription: currentPageNavigation.description,
+  ogImage: '',
+})
 </script>
 
 <template>
