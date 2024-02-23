@@ -2397,7 +2397,7 @@ body {
   --gray8: #c7c7c7;
   --gray9: #8f8f8f;
   --gray10: #858585;
-  --gray11: #3a3a3a;
+  --gray11: #7F7F7F;
   --gray12: #171717;
   --grayA2: rgba(0, 0, 0, .027);
   --focus-color: #1e90ff;
@@ -2418,7 +2418,8 @@ body {
     --gray8: #505050;
     --gray9: #707070;
     --gray10: #7e7e7e;
-    --gray11: #e5e5e5;
+    /* --gray11: #e5e5e5; */
+    --gray11: #7F7F7F;
     --gray12: #ededed;
     --grayA2: hsla(0, 0%, 100%, .026);
     --shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .2)
