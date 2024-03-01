@@ -1,5 +1,5 @@
 ---
-title: 云南之旅：去有风的地方
+title: 云南之旅：去有风的地方 | Kano Zhao
 navigation:
   title: 云南之旅：去有风的地方
   date: 2024-01-20

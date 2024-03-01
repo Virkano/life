@@ -23,6 +23,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
   ],
+  content: {
+    documentDriven: true,
+  },
   pinia: {
     autoImports: [
       'defineStore', // import { defineStore } from 'pinia'
