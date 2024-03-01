@@ -49,7 +49,7 @@ if (page.value._file.split('/')[0] === 'retrospectives')
           <p class="mb-2 mt-1 flex items-center gap-2">
             <i class="i-carbon-arrow-right inline-block h-4 w-4" />
             <NuxtLink :to="prev._path">
-              {{ prev.title }}
+              {{ prev.navigation.title }}
             </NuxtLink>
             <span class="text-sm opacity-60">{{ $dayjs(prev.navigation.date).format('YYYY-MM-DD') }}</span>
           </p>

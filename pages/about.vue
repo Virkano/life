@@ -19,9 +19,8 @@
       </h2>
       <p>
         <code class="mr-1" dir="ltr">调停者</code>
-        <code class="mr-1" dir="ltr">产品型开发者</code>
         <del><code class="mr-1" dir="ltr">失眠患者</code></del>
-        <code class="mr-1" dir="ltr">天生就会弹舌</code>
+        <code class="mr-1" dir="ltr">打篮球🏀</code>
         <code class="mr-1" dir="ltr">周末就想出去玩</code>
       </p>
       <h2 id="兴趣爱好">
@@ -29,13 +28,13 @@
       </h2>
       <ul>
         <li>
-          <p><strong>骑行：</strong> 2022 年入手公路自行车「迪卡侬 RC100」，自此便爱上骑行，目前去过 <strong>苕溪绿道</strong>、<strong>龙井</strong>、<strong>塘栖古镇</strong>，未来想去 <strong>千岛湖</strong>、<strong>翁金线</strong> 以及尝试跨城骑行</p>
+          <p><strong>打篮球：</strong> 因为初中学习压力过大接触的一项运动，然后就一发不可收拾，不过依然「菜鸡互啄」</p>
         </li>
         <li>
           <p><strong>台球：</strong> 工作后朋友间最多的周末活动，但发挥水平浮动较大，笃信「大力出奇迹」</p>
         </li>
         <li>
-          <p><strong>羽毛球：</strong> 小时候学会的一项运动，长大后依然热爱</p>
+          <p><strong>羽毛球：</strong> 陪女友一起最多的运动，能给他打趴下的那种 </p>
         </li>
         <li>
           <p><strong>徒步：</strong> 去户外，动起来，你就知道电子屏是多么的单调</p>
@@ -44,7 +43,7 @@
       <h2 id="关于本站">
         <a class="anchor" href="#关于本站" />关于本站
       </h2>
-      <details class="group m-0 mt-4 rounded-md border">
+      <details class="group m-0 mt-4 rounded-md border p-0">
         <summary class="!m-0 cursor-pointer select-none px-4 py-2 group-hover:!text-[var(--fg-deep)]">
           <p class="!m-0 !inline-block text-base">
             构建本站用到的技术和工具
@@ -53,15 +52,8 @@
         <ul class="!m-0 rounded-b-md border-t bg-neutral-50 !px-4 !py-2 dark:bg-neutral-950">
           <li>Nuxt.js（框架）</li>
           <li>Unocss CSS（样式）</li>
-          <li>Contentlayer（内容处理）</li>
-          <li>Drizzle（ORM）</li>
-          <li>Umami（网站统计）</li>
+          <li>NuxtContent（内容处理）</li>
           <li>Vercel（部署服务）</li>
-          <li>Resend（邮件发送）</li>
-          <li>Cloudflare（域名、对象存储）</li>
-          <li>Supabase（数据库）</li>
-          <li>Upstash（Redis 服务）</li>
-          <li>Figma（Logo 设计）</li>
         </ul>
       </details>
       <h2 id="找到我">

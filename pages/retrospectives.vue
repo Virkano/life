@@ -19,10 +19,10 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 const postList = ref<NavigationChildrenModel[]>([])
 
 function getArticleList() {
-  postList.value = navigation.value[1].children.sort((a, b) => new Date(b.date) - new Date(a.date))
+  if (navigation.value?.length)
+    postList.value = navigation.value[1].children.sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 getArticleList()
-console.log(postList.value)
 </script>
 
 <template>

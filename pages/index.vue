@@ -2,7 +2,7 @@
 // 批量导入静态资源图片
 const importImage: any = computed(
   () =>
-    (name: string, type = 'png', folder = 'images') => {
+    (name: string, type = 'jpeg', folder = 'images') => {
       const glob: Record<string, any> = import.meta.glob(`~/assets/images/*`, {
         eager: true,
       })
@@ -12,16 +12,16 @@ const importImage: any = computed(
 
 const imageList = ref([
   {
-    alt: '我在苕溪绿道骑行',
-    src: 'riding',
+    alt: '我在臭美',
+    src: 'me',
   },
   {
     alt: '面向大海我张开了双手',
-    src: 'hug',
+    src: 'weihai',
   },
   {
-    alt: '我正在写代码',
-    src: 'coding',
+    alt: '我想扣篮',
+    src: 'koulan',
   },
 ])
 
@@ -161,11 +161,15 @@ getArticleList()
               一名前端开发工作者，热衷于将所学到的知识付诸实践，包括不限于编程、设计、视频内容创作
             </p>
             <p class="text-base max-md:text-sm">
-              除了写代码之外，我还喜欢骑行、旅行和摄影，如果你也和我一样在<span
+              除了写代码之外，我还喜欢篮球、旅行和摄影，如果你也和我一样在
+              <span
                 class="border-[#d8dcdf mx-1 inline-block cursor-default rounded-md border py-[0.025em] pr-1 leading-none transition-colors dark:border-[#323232]"
               >
                 <i class="i-tdesign-tower inline-block h-5 w-5 fill-neutral-700 align-sub dark:fill-neutral-300 max-md:h-4 max-md:w-4" />
-                <b class="text-base text-neutral-700 dark:text-neutral-300 max-md:text-sm">上海</b></span>也许我们可以一起出去玩~
+                <b class="text-base text-neutral-700 dark:text-neutral-300 max-md:text-sm">
+                  上海
+                </b>
+              </span>也许我们可以交个朋友~
             </p>
           </div>
         </div>
