@@ -25,28 +25,7 @@ const imageList = ref([
   },
 ])
 
-export interface NavigationChildrenModel {
-  title: string
-  _path: string
-  date: string
-  icon: string
-  description: string
-}
-
-export interface NavigationModel {
-  title: string
-  _path: string
-  children: NavigationChildrenModel[]
-}
-
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-
-const postList = ref<NavigationChildrenModel[]>([])
-
-function getArticleList() {
-  postList.value = navigation.value[0].children.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 2)
-}
-getArticleList()
+const data = await queryContent('posts').sort({ date: -1 }).limit(2).find()
 </script>
 
 <template>
@@ -186,18 +165,18 @@ getArticleList()
           <span class="ml-1.5 select-none">近期文章</span>
         </h2>
         <ol class="space-y-4">
-          <li v-for="(item, index) in postList" :key="index">
+          <li v-for="(item, index) in data" :key="index">
             <NuxtLink class="group" :to="item._path">
               <h3
                 class="m-0 p-0 text-xl font-bold underline decoration-dotted underline-offset-4 group-hover:decoration-solid max-md:text-base"
               >
-                {{ item.title }}
+                {{ item?.navigation?.title }}
               </h3>
               <div class="flex flex-col">
                 <p
                   class="line-clamp-2 py-1 pb-0.5 text-md leading-6 text-neutral-600 dark:text-neutral-300 max-md:text-sm"
                 >
-                  {{ item.description }}
+                  {{ item?.navigation?.description }}
                 </p>
               </div>
             </NuxtLink>

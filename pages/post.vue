@@ -1,26 +1,5 @@
 <script setup lang="ts">
-export interface NavigationChildrenModel {
-  title: string
-  _path: string
-  date: string
-  icon: string
-  description: string
-}
-
-export interface NavigationModel {
-  title: string
-  _path: string
-  children: NavigationChildrenModel[]
-}
-
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
-
-const postList = ref<NavigationChildrenModel[]>([])
-
-function getArticleList() {
-  postList.value = navigation.value[0].children.sort((a, b) => new Date(b.date) - new Date(a.date))
-}
-getArticleList()
+// const data = await queryContent('posts').sort({ date: -1 }).find()
 </script>
 
 <template>
@@ -36,18 +15,20 @@ getArticleList()
       </button>
     </header>
     <div class="flex flex-col gap-5">
-      <div v-for="(item, index) in postList" :key="index">
-        <NuxtLink :to="item._path">
-          <h3 class="m-0 p-0 text-xl font-bold underline decoration-dotted underline-offset-4 hover:decoration-solid max-md:text-base">
-            {{ item.title }}
-          </h3>
-        </NuxtLink>
-        <div class="mt-1 flex flex-col">
-          <p class="py-0.5 text-md leading-6 text-neutral-600 dark:text-neutral-300 max-md:text-sm">
-            {{ item.description }}
-          </p>
+      <ContentList v-slot="{ list }" path="/posts">
+        <div v-for="article in list" :key="article._path">
+          <NuxtLink :to="article._path">
+            <h3 class="m-0 p-0 text-xl font-bold underline decoration-dotted underline-offset-4 hover:decoration-solid max-md:text-base">
+              {{ article?.navigation?.title }}
+            </h3>
+          </NuxtLink>
+          <div class="mt-1 flex flex-col">
+            <p class="py-0.5 text-md leading-6 text-neutral-600 dark:text-neutral-300 max-md:text-sm">
+              {{ article?.navigation?.description }}
+            </p>
+          </div>
         </div>
-      </div>
+      </ContentList>
     </div>
   </div>
 </template>

@@ -4,7 +4,8 @@ import duration from 'dayjs/plugin/duration'
 // 添加 duration 插件
 dayjs.extend(duration)
 
-export function diffTime(time) {
+export function diffTime(times) {
+  const time = dayjs(times).format('YYYY-MM-DD')
   // 获取当前时间
   const now = dayjs()
 
