@@ -30,7 +30,7 @@ function activeChange(val: number) {
 </script>
 
 <template>
-  <div class="sticky top-0 z-50 h-16 border-b border-[#e9ecef] bg-neutral-50/80 after:absolute after:inset-0 after:backdrop-blur-[20px] after:backdrop-saturate-[180%] dark:border-[#2d2d2d] dark:bg-neutral-950/80" style="opacity: 1;">
+  <div class="sticky top-0 z-50 h-16 border-b border-[#e9ecef] bg-neutral-50/80 after:absolute after:inset-0 after:backdrop-blur-[20px] after:backdrop-saturate-[180%]  dark:border-[#2d2d2d] dark:bg-neutral-950/80" style="opacity: 1;">
     <div class="mx-auto grid h-full w-full max-w-5xl grid-cols-[1fr_max-content] items-center px-6 py-3">
       <div class="z-[99] flex items-center">
         <NuxtLink class="group inline-flex cursor-pointer items-center gap-1" to="/" @click.stop="activeChange(0)">
