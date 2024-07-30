@@ -1,10 +1,10 @@
 <script setup>
 const route = useRouter()
-const page = await queryContent('retrospectives').sort({ _path: route.currentRoute.value.path }).find()
-
-if (!page)
+const { data: page } = await useAsyncData(route.currentRoute.value.path, () =>
+  queryContent(route.currentRoute.value.path).findOne())
+if (!page.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-const currentPageNavigation = page[0].navigation
+const currentPageNavigation = page.value.navigation
 
 const { prev } = useContent()
 

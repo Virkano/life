@@ -25,7 +25,7 @@ const imageList = ref([
   },
 ])
 
-const data = await queryContent('posts').sort({ date: -1 }).limit(2).find()
+const data = await queryContent('posts').sort({ date: -1 }).limit(3).find()
 </script>
 
 <template>

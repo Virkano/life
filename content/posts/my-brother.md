@@ -1,0 +1,34 @@
+---
+title: 我的色批兄弟 | Kano Zhao
+navigation:
+  title: 我的色批兄弟敬上
+  date: 2024-07-30
+  icon: 🌲
+  description: 如果你饥渴难耐了，请想起兄弟的好，我的好兄弟！！
+---
+
+windows电脑 💻
+
+去群里下载我发的exe软件，安装一下，打开你会看到一个新的世界。
+![clash](/images/clash/clash.png)
+
+然后去配置一下翻墙的链接，如下图，点击配置，把url扔进去，点击下载。
+链接🔗：找我要！
+
+![clash1](/images/clash/clash1.png)
+
+是的，没错，你真棒！下载下来如图就好了。哥们就50个G每月，少撸。
+
+![clash2](/images/clash/clash2.png)
+
+* 点击左边的代理
+* 点击规则一下（国内正常用国内的网，国外网站的用这个软件转发出去，这个时候费的就是我的流量了）
+* 然后点击一下那个小wifi测试一下延迟，找个后边绿色数字小的点一下就好了。或者不动也行，就选第一个AUTO，妹妹全自动。
+
+![clash3](/images/clash/clash3.png)
+
+* 点击左边的常规
+* 打开系统代理，恭喜你 可以愉快的学英语了 🎉🎉🎉
+![clash4](/images/clash/clash4.png)
+
+🍎 苹果手机  找 小崔
