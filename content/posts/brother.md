@@ -9,6 +9,10 @@ navigation:
 
 windows电脑 💻
 
+<a class="custom-link text-[22px]" href="https://repo.trojan-cdn.com/clash_for_windows_pkg/v%200.20.10/" target="_blank">
+  Clash多系统下载地址
+</a>
+
 去群里下载我发的exe软件，安装一下，打开你会看到一个新的世界。
 ![clash](/images/clash/clash.png)
 
@@ -31,4 +35,32 @@ windows电脑 💻
 * 打开系统代理，恭喜你 可以愉快的学英语了 🎉🎉🎉
 ![clash4](/images/clash/clash4.png)
 
-🍎 苹果手机  找 小崔
+🍎 苹果手机  找 小崔 要外网苹果id，下载一个 `Shadowrocket`
+
+<br/>
+下载完 `Shadowrocket` 也就是小飞机如图：
+
+![phone](/images/clash/phone.jpg)
+
+<br/>
+打开软件，点击左上角的 + 号
+
+![phone1](/images/clash/phone1.jpg)
+
+<br/>
+把给你的链接🔗 复制到URL中，点击完成 ✅
+
+![phone2](/images/clash/phone2.jpg)
+
+<br/>
+会自己跳转到首页，如下图：
+
+![phone3](/images/clash/phone3.jpg)
+
+<br/>
+把按钮打开，如下图：学习去吧。
+
+![phone4](/images/clash/phone4.jpg)
+
+<br/>
+<a class="custom-link text-[18px]" href="https://cn.pornhub.com" target="_blank"> 网址分享：学习英语</a>
