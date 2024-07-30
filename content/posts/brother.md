@@ -64,3 +64,9 @@ windows电脑 💻
 
 <br/>
 <a class="custom-link text-[18px]" href="https://cn.pornhub.com" target="_blank"> 网址分享：学习英语</a>
+
+<br/>
+<br/>
+<a class="custom-link text-[18px]" href="https://www.kuromis.com/" target="_blank">
+获取文中的翻墙链接地址推荐网站(贵，稳定，你想要的时候就能满足你)
+</a>
