@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useDark, useToggle } from '@vueuse/core'
+
 const layout = 'custom'
 useHead({
   title: 'Kano Zhao',
@@ -20,6 +22,8 @@ nuxtApp.hook('page:start', () => {
 nuxtApp.hook('page:finish', () => {
   isFullLoading.value = false
 })
+
+const isDark = useDark()
 </script>
 
 <template>
@@ -27,7 +31,7 @@ nuxtApp.hook('page:finish', () => {
   <FullLoading v-if="isFullLoading" />
   <NuxtLayout :name="layout">
     <!-- 在页面导航之间显示一个进度条 -->
-    <NuxtLoadingIndicator color="#e5e7eb" :height="2" />
+    <NuxtLoadingIndicator :color="isDark ? '#27272a' : '#e5e7eb'" :height="2" />
     <NuxtPage />
   </NuxtLayout>
 </template>

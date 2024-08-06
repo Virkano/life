@@ -2,7 +2,6 @@
 import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark()
-console.log(`output->isDark`, isDark)
 const toggleDark = useToggle(isDark)
 
 const navList = ref([

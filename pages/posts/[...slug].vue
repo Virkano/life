@@ -19,7 +19,7 @@ useSeoMeta({
 <template>
   <main>
     <div class="mx-auto mb-10 flex max-w-2xl flex-col items-start">
-      <h1 class="text-4xl font-bold dark:text-gray-100 max-md:text-3xl">
+      <h1 class="text-4xl font-bold text-#000 dark:text-gray-100 max-md:text-3xl">
         {{ currentPageNavigation.title }}
       </h1>
     </div>
