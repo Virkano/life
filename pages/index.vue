@@ -25,7 +25,7 @@ const imageList = ref([
   },
 ])
 
-const data = await queryContent('posts').sort({ date: -1 }).limit(3).find()
+const data = await queryContent('posts').where({ navigation: { title: { $ne: '梯子' } } }).sort({ date: -1 }).limit(3).find()
 </script>
 
 <template>

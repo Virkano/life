@@ -1,7 +1,7 @@
 ---
-title: 我的色批兄弟 | Kano Zhao
+title: 梯子🪜 | Kano Zhao
 navigation:
-  title: 我的色批兄弟敬上
+  title: 梯子
   date: 2024-07-30
   icon: 🌲
   description: 如果你饥渴难耐了，请想起兄弟的好，我的好兄弟！！

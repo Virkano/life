@@ -17,15 +17,17 @@
     <div class="flex flex-col gap-5">
       <ContentList v-slot="{ list }" path="/posts">
         <div v-for="article in list" :key="article._path">
-          <NuxtLink :to="article._path">
-            <h3 class="m-0 p-0 text-xl font-bold underline decoration-dotted underline-offset-4 hover:decoration-solid max-md:text-base">
-              {{ article?.navigation?.title }}
-            </h3>
-          </NuxtLink>
-          <div class="mt-1 flex flex-col">
-            <p class="py-0.5 text-md leading-6 text-neutral-600 dark:text-neutral-300 max-md:text-sm">
-              {{ article?.navigation?.description }}
-            </p>
+          <div v-if="article?.navigation?.title !== '梯子'">
+            <NuxtLink :to="article._path">
+              <h3 class="m-0 p-0 text-xl font-bold underline decoration-dotted underline-offset-4 hover:decoration-solid max-md:text-base">
+                {{ article?.navigation?.title }}
+              </h3>
+            </NuxtLink>
+            <div class="mt-1 flex flex-col">
+              <p class="py-0.5 text-md leading-6 text-neutral-600 dark:text-neutral-300 max-md:text-sm">
+                {{ article?.navigation?.description }}
+              </p>
+            </div>
           </div>
         </div>
       </ContentList>

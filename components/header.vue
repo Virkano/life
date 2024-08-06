@@ -2,6 +2,7 @@
 import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark()
+console.log(`output->isDark`, isDark)
 const toggleDark = useToggle(isDark)
 
 const navList = ref([
@@ -51,8 +52,7 @@ function activeChange(val: number) {
               </NuxtLink>
               <li>
                 <div
-                  class="text-[var(--gray10)] cursor-pointer"
-                  :class="isDark ? 'i-ph-moon-bold' : 'i-ph-sun-bold'" @click="toggleDark()"
+                  class="text-[var(--gray10)] cursor-pointer dark:i-ph-moon-bold i-ph-sun-bold" @click="toggleDark()"
                 />
               </li>
             </ul>
@@ -60,8 +60,7 @@ function activeChange(val: number) {
         </nav>
       </div>
       <div
-        class="z-[99] cursor-pointer  md:hidden"
-        :class="isDark ? 'i-ph-moon-bold' : 'i-ph-sun-bold'" @click="toggleDark()"
+        class="z-[99] cursor-pointer  md:hidden dark:i-ph-moon-bold i-ph-sun-bold" @click="toggleDark()"
       />
     </div>
   </div>

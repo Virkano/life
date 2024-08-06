@@ -27,7 +27,7 @@ nuxtApp.hook('page:finish', () => {
   <FullLoading v-if="isFullLoading" />
   <NuxtLayout :name="layout">
     <!-- 在页面导航之间显示一个进度条 -->
-    <NuxtLoadingIndicator color="#27272a" :height="2" />
+    <NuxtLoadingIndicator color="#e5e7eb" :height="2" />
     <NuxtPage />
   </NuxtLayout>
 </template>
